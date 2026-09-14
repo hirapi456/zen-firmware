@@ -14,15 +14,18 @@ STLファイルは `stl/` に格納しています。
 - `zen-bottom-right-v1.0.stl`
 - `zen-bumper-left-v1.0.stl`
 - `zen-bumper-right-v1.0.stl`
-- `zen-power-switch-v1.0.stl`
-- `zen-topplate-left-v1.0.stl`
+- `zen-power-switch-v1.1.stl`
+- `zen-topplate-left-display-v1.1.stl`
+- `zen-topplate-left-v1.1.stl`
 - `zen-topplate-left-trackpad-v1.0.stl`
-- `zen-topplate-right-v1.0.stl`
-- `zen-trackball-cover-PMW3610-v1.1.stl`
-- `zen-trackball-parts-PAW3222-v1.0.stl`
-- `zen-trackball-parts-PMW3610-v1.0.stl`
+- `zen-topplate-right-v1.1.stl`
+- `zen-trackball-cover-v1.3.stl`
+- `zen-trackball-parts-PAW3222-v1.3.stl`
+- `zen-trackball-parts-PMW3610-v1.3.stl`
 - `zen-trackpad-cover-v1.0.stl`
 - `zen-trackpad-top-cover-v1.0.stl`
+
+旧版・移行前のSTLファイルは `stl/old/` に格納しています。
 
 ## ライセンス
 
