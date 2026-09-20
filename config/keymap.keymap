@@ -13,6 +13,31 @@
             key-positions = <28 29>;
             layers = <2>;
         };
+
+        left-click {
+            bindings = <&mkp LCLK>;
+            key-positions = <19 20>;
+        };
+
+        right-click {
+            bindings = <&mkp RCLK>;
+            key-positions = <21 22>;
+        };
+
+        mddle-click {
+            bindings = <&mkp MCLK>;
+            key-positions = <20 21>;
+        };
+
+        next-pagej {
+            bindings = <&mkp MB5>;
+            key-positions = <33 34>;
+        };
+
+        prev-page {
+            bindings = <&mkp MB4>;
+            key-positions = <35 34>;
+        };
     };
 
     keymap {
@@ -20,37 +45,37 @@
 
         layer_0 {
             bindings = <
-&kp ESC    &kp Q       &kp W         &kp E     &kp R           &kp T      &kp Y  &kp U           &kp I  &kp O           &kp P           &kp BSPC
-&kp TAB    &kp A       &kp S         &kp D     &kp F           &kp G      &kp H  &kp J           &kp K  &kp L           &kp MINUS       &kp ENTER
-&kp LSHFT  &kp Z       &kp X         &kp C     &kp V           &kp B      &to 0  &kp INT_KANA    &kp N  &kp M           &kp COMMA       &kp DOT          &kp UP_ARROW  &mt PERCENT QUESTION
-&kp LCTRL  &kp ESCAPE  &kp LEFT_WIN  &kp LALT  &kp INT_HENKAN  &kp SPACE  &mo 3  &kp LANGUAGE_1  &mo 2  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
+&kp ESC    &kp Q       &kp W         &kp E     &kp R           &kp T      &kp Y                    &kp U         &kp I  &kp O           &kp P                       &kp BSPC
+&kp TAB    &kp A       &kp S         &kp D     &kp F           &kp G      &kp H                    &kp J         &kp K  &kp L           &mt UNDER MINUS             &kp ENTER
+&kp LSHFT  &kp Z       &kp X         &kp C     &kp V           &kp B      &kp LANG_ZENKAKUHANKAKU  &kp INT_KANA  &kp N  &kp M           &mt LEFT_PARENTHESIS COMMA  &mt RIGHT_PARENTHESIS DOT  &kp UP_ARROW  &mt PERCENT QUESTION
+&kp LCTRL  &kp ESCAPE  &kp LEFT_WIN  &kp LALT  &kp INT_HENKAN  &kp SPACE  &mo 3                    &mo 2         &mo 2  &kp LEFT_ARROW  &kp DOWN_ARROW              &kp RIGHT_ARROW
             >;
         };
 
         layer_1 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                &mkp LCLK  &mo 4             &mkp RCLK  &trans                 &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp RG(LEFT_BRACKET)  &mkp MB1   &mkp MB3          &mkp MB2   &kp RG(RIGHT_BRACKET)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                &trans     &kp LC(UP_ARROW)  &trans     &trans                 &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                &trans     &trans            &trans     &trans                 &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         layer_2 {
             bindings = <
-&kp ESCAPE  &kp N1    &kp N2  &kp N3    &kp N4      &kp N5     &kp N6     &kp N7         &kp N8     &kp N9                &kp N0                 &kp DELETE
-&trans      &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PRCNT  &kp CARET  &kp AMPERSAND  &kp ASTRK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans      &trans    &trans  &trans    &trans      &trans     &trans     &trans         &kp TILDE  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SLASH
-&trans      &trans    &trans  &trans    &trans      &trans     &trans     &trans         &trans     &trans                &trans                 &trans
+&kp ESCAPE  &kp N1    &kp N2   &kp N3    &kp N4      &kp N5     &kp N6         &kp N7  &kp N8                &kp N9          &kp N0                 &kp DELETE
+&trans      &kp EXCL  &kp DQT  &kp HASH  &kp DOLLAR  &kp PRCNT  &kp AMPERSAND  &kp AT  &kp NON_US_BACKSLASH  &kp DQT         &kp RIGHT_PARENTHESIS  &trans
+&trans      &trans    &trans   &trans    &trans      &trans     &trans         &trans  &kp TILDE             &kp LEFT_BRACE  &kp LEFT_BRACKET       &kp RIGHT_BRACKET  &kp RIGHT_BRACKET  &kp SLASH
+&trans      &trans    &trans   &trans    &trans      &trans     &trans         &trans  &trans                &trans          &trans                 &trans
             >;
         };
 
         layer_3 {
             bindings = <
-&trans        &kp F1        &kp F2        &kp F3        &kp F4        &kp F5      &trans          &kp FSLH  &kp ASTRK  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9
-&trans        &kp F6        &kp F7        &kp F8        &kp F9        &kp F10     &kp HOME        &trans    &kp MINUS  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6
-&trans        &kp F11       &kp F12       &out OUT_USB  &out OUT_BLE  &bt BT_NXT  &bt BT_CLR_ALL  &trans    &kp END    &trans           &kp GRAVE        &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans      &trans          &trans    &trans     &kp KP_NUMBER_0  &kp DOT          &kp EQUAL
+&trans        &kp F1        &kp F2        &kp F3        &kp F4        &kp F5      &trans          &kp FSLH  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp ASTERISK
+&trans        &kp F6        &kp F7        &kp F8        &kp F9        &kp F10     &kp HOME        &trans    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS
+&trans        &kp F11       &kp F12       &out OUT_USB  &out OUT_BLE  &bt BT_NXT  &bt BT_CLR_ALL  &trans    &kp END          &trans           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PLUS
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans      &trans          &trans    &kp KP_NUMBER_0  &kp DOT          &kp KP_EQUAL     &kp ENTER
             >;
         };
 
