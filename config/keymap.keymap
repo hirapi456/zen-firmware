@@ -31,12 +31,22 @@
 
         next-pagej {
             bindings = <&mkp MB5>;
-            key-positions = <33 34>;
+            key-positions = <34 35>;
         };
 
         prev-page {
             bindings = <&mkp MB4>;
-            key-positions = <35 34>;
+            key-positions = <34 33>;
+        };
+
+        down {
+            bindings = <&msc MOVE_Y(-10)>;
+            key-positions = <7 8>;
+        };
+
+        up {
+            bindings = <&msc MOVE_Y(10)>;
+            key-positions = <8 9>;
         };
     };
 
